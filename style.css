@@ -4513,3 +4513,42 @@ body.auth-lock {
     object-position: center top;
   }
 }
+
+/* =================================
+   MY ORDERS – MOBILE RESPONSIVE FIX
+================================= */
+@media (max-width: 768px) {
+
+  .order-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px;
+  }
+
+  .order-card img,
+  .order-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 14px;
+  }
+
+  .order-details {
+    width: 100% !important;
+  }
+
+  .order-status,
+  .order-action,
+  .order-btn {
+    align-self: flex-start !important;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+   .order-status.delivered{
+    margin: 16px auto 0 auto !important;
+    display: inline-flex !important;
+    justify-content: center;
+  
+  } 
+}
